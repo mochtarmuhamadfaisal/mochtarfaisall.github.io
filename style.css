@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat";
+
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#navbarNav ul li a {
+    letter-spacing: 1px;
+}
+
+button.btn-primary:hover {
+    background-color: #232323
+}
+
+section.home {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    /*ini untuk membuat 2 kolom untuk text dan img*/
+    grid-template-rows: 1fr;
+    /*ini untuk membuat 1 baris */
+
+}
+
+.text-section {
+    padding-top: 160px;
+}
+
+h1.large-title {
+    /*untk text yg besar*/
+    font-size: 40px;
+    color: #232323;
+    font-weight: 700;
+}
+
+h2.large-title {
+    /*untk text yg besar*/
+    font-size: 25px;
+    color: #818287;
+    font-family: "kanit";
+    margin-bottom: 25px;
+}
+
+p.text-muted {
+    font: 11px;
+    color: #7c7c7c;
+    margin: 10px 0;
+    letter-spacing: 2%;
+    line-height: 151.4%;
+}
+
+.medsos a img {
+    display: inline-block;
+    margin-right: 24px;
+    padding-bottom: 50px;
+}
+
+button.btn-primary {
+    padding: 22px 58px;
+    background-color: #818287;
+    border-radius: 100px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 10px 20px #00000038;
+    margin: 24px 0;
+
+}
+
+.jumbotron-img {
+
+    justify-content: center;
+    position: relative;
+}
+
+.aku {
+
+    left: 223px;
+    bottom: 200px;
+    position: absolute; 
+    color: white;
+    font-weight: 600;
+}
+
+.jumbotron-img img {
+    right: 0;
+    position: absolute;
+}
+
+/* .nav-link.active {
+    /*untuk link yg active*/
+    /* font-weight: 600; */
+    /* border-bottom: 3px solid #C4C4C4; */
+
+/* } */ 
+
+.collapse ul li {
+    margin-right: 20px;
+}
+
+/* about */
+section.about {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 2rem;
+    /* grid-template-rows: 1fr 1fr; */
+    /*ini untuk membuat 1 baris */
+}
+
+.jumbotron_about {
+    background-color: #C4C4C4;
+}
+
+.about h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: -10rem;
+    letter-spacing: 3px;
+}
+
+.about img {
+    position: relative;
+    /* right: 0;
+    left: 443px; */
+    padding-top: 20px;
+}
+
+.about p {
+    text-align: center;
+    padding-top: 30px;
+    letter-spacing: 1px;
+    line-height: 151.4%;
+    padding-bottom: 250px;
+
+}
+
+/* penutup about */
+
+/* project */
+#projects {
+    background-color: #C4C4C4;
+}
+
+#projects h1 {
+
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 2rem;
+    letter-spacing: 3px;
+    padding-bottom: 2rem;
+}
+
+#project.row {
+    padding-top: 100px;
+}
+
+/* penutyup project */
+
+/* blog */
+section.blog h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 2rem;
+    letter-spacing: 3px;
+    padding-bottom: 2rem;
+}
+
+section.blog {
+    background-color: #C4C4C4;
+}
+
+/* penutup blog */
+
+/* contact */
+#contact h1 {
+    
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 1rem;
+    letter-spacing: 3px;
+    padding-bottom: 2rem;
+}
+
+button.btn-secondary{
+    padding: 4px 14px;
+    width: 90px;
+    height: 40px;
+    background-color: #4B506F;
+    border-radius: 100px;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    box-shadow: 0 10px 20px #00000038;
+    
+    
+}
+/* penutup contact */
+
+/* footer */
+section.footer{
+    background-color: #C4C4C4;
+    
+}
+img.buttonscroll{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+/* akhir footer */
+
+
+@media(max-width: 450px) {
+
+    .container {
+        width: 335px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    /* nama dan home */
+
+    .namabrand {
+        font-size: 15px;
+    }
+
+    section.home {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .text-section {
+        grid-row: 2/3;
+        /* padding-top: 20px; */
+    }
+
+    .jumbotron-img {
+        height: 80%;
+        background-image: url(assets/mobileimgfix.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-bottom: 20px;
+
+    }
+
+    .jumbotron-img img {
+        display: none;
+    }
+
+    h2.large-title {
+        font-size: 16px;
+
+
+    }
+
+    h1.large-title {
+        /*untk text yg besar*/
+        font-size: 30px;
+
+
+    }
+
+    .text-section {
+        width: 90%;
+        padding-top: 10px;
+    }
+
+    p.text-muted {
+        font-size: 12px;
+
+    }
+
+    .medsos a img {
+        display: inline-block;
+        margin-right: 24px;
+        padding-bottom: 10px;
+    }
+
+    button.btn-primary {
+        padding: 20px 36px;
+        background-color: #4B506F;
+        border-radius: 100px;
+        color: #fff;
+        border: none;
+        font-size: 12px;
+        font-weight: 500;
+        box-shadow: 0 10px 20px #00000038;
+        margin: 24px 0;
+    }
+
+    section.about p{
+        padding-bottom: 1rem;
+    }
+
+    #projects h1{
+        padding-top: 2rem;
+    }
+
+   
+
+    /* penutup nav dan home */
+
+    /* about */
+
+
+    /* penutup about */
+}
